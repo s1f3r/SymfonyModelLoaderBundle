@@ -1,0 +1,4 @@
+This bundle lazy loads models from /bundle/Model
+models have to be defined in /bundle/config/models.yml file:
+modelName:
+	model/namespace/modelName
