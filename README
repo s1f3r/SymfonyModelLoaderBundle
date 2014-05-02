@@ -4,4 +4,4 @@ models have to be defined in /bundle/config/models.yml file:
 modelName:
 	model/namespace/modelName
 
-other configuration files might be comming sometime later
+Other configuration files might be comming sometime later
