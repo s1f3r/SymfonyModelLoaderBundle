@@ -1,7 +1,10 @@
-This bundle lazy loads models from /bundle/Model
+This bundle lazy loads models from /bundle/Model folder
 
-models have to be defined in /bundle/config/models.yml file:
+models have to be defined in /bundle/Resources/config/models.yml file:
+---------------- models.yml ----------------
 modelName:
 	model/namespace/modelName
+--------------------------------------------
 
-Other configuration files might be comming sometime later
+Other configuration files might be coming sometime later as well as
+configurations for custom models locations

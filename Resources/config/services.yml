@@ -1,0 +1,7 @@
+parameters:
+      model_manager.class: s1f3r\SymfonyModelLoaderBundle\ModelManager\ModelManager
+
+services:
+    model_manager:
+          class: %model_manager.class%
+          arguments: [@service_container]
