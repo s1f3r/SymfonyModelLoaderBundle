@@ -1,7 +1,7 @@
 {
     "name": "s1f3r/symfony-model-loader-bundle",
     "description": "This bundle helps to lazy load model classes",
-    "keywords": ["model","symfony"],
+    "keywords": ["model","symfony", "loader"],
     "type": "symfony-bundle",
     "authors": [
         {
@@ -15,5 +15,6 @@
     "autoload": {
         "psr-0": { "s1f3r\\SymfonyModelLoaderBundle": "" }
     },
-    "target-dir": "s1f3r/SymfonyModelLoaderBundle"
+    "target-dir": "s1f3r/SymfonyModelLoaderBundle",
+    "minimum-stability": "dev"
 }
