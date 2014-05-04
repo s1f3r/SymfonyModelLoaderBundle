@@ -1,5 +1,5 @@
 {
-    "name": "s1f3r/SymfonyModelLoaderBundle",
+    "name": "s1f3r/symfony-model-loader-bundle",
     "description": "This bundle helps to lazy load model classes",
     "keywords": ["model","symfony"],
     "type": "symfony-bundle",
