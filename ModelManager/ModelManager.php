@@ -11,9 +11,11 @@ use Symfony\Component\Yaml\Yaml;
 class ModelManager extends ContainerAware {
     protected  $modelContainer;
     protected  $bundles;
+    protected  $serviceContainer;
 
     public function __construct(Container $container)
     {
+        $this->serviceContainer = $container;
         $kernel = $container->get('kernel');
 
         $bundles = $container->getParameter('kernel.bundles');
@@ -65,7 +67,7 @@ class ModelManager extends ContainerAware {
         }
 
         $modelClass = $bundleModels[$modelName]['class'];
-        $this->modelContainer->set($id, new $modelClass);
+        $this->modelContainer->set($id, new $modelClass($this->serviceContainer));
 
         return $this->modelContainer->get($id);
     }
