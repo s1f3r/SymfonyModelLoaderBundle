@@ -10,11 +10,7 @@ class BaseModel extends ContainerAware
 {
     public function __construct($container = null)
     {
-        if ($container instanceof appDevDebugProjectContainer) {
-            $this->container = $container;
-        } else {
-            $this->container = null;
-        }
+        $this->container = $container;
     }
 
     /**
